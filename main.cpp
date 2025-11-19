@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
     // Making the lines from point to point.
     line(ax, ay, bx, by, framebuffer, blue);
     line(cx, cy, bx, by, framebuffer, green);
-    line(cx, cy, bx, by, framebuffer, yellow);
+    line(cx, cy, ax, ay, framebuffer, yellow);
     line(ax, ay, cx, cy, framebuffer, red);
 
     framebuffer.write_tga_file("framebuffer.tga");
